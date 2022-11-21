@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Counter</title>
+  <link rel="stylesheet" href="cardcounter.css">
+  <script src="cardcounter.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="countersSection">
+
+    <div class="counterContainer" id="runningCountContainer">
+      <h2 id="runningCount">0</h2>
+      <h1>Running Count</h1>
+  </div>
+
+    <div class="counterContainer" id="cardsDealtContainer">
+      <h2 id="cardsDealt">0</h2>
+      <h1>Cards Dealt</h1>
+    </div>
+
+    <div class="counterContainer" id="trueCountContainer">
+      <h2 id="trueCount">0</h2>
+      <h1>True Count</h1>
+    </div>
+
+  </div>
+
+  <button id="newShoe" class="button" onclick="newShoe()">
+    NEW SHOE
+  </button>
+
+
+  <div id="statusSection">
+    <h1>STATUS:</h1><h1 id="status" style="margin-left: 10px;">MODERATE</h1>
+  </div>
+
+
+  <div id="buttonsSection">
+
+    <div class="buttonContainer" id="lowCardContainer">
+      <img style="width: 400px;" src="/images/lowcards.png" alt="2-6" >
+      <button class="button" id="lowCard" onclick="lowCard()">LOW CARD</button>
+    </div>
+
+    <div class="buttonContainer"  id="middleCardContainer">
+      <img style="height: 106px;" src="/images/middlecards.png" alt="7-9" >
+      <button class="button" id="middleCard" onclick="middleCard()">MIDDLE CARD</button>
+    </div>
+
+    <div class="buttonContainer"  id="highCardContainer">
+      <img style="width: 400px;" src="/images/highcards.png" alt="10-A" > 
+    <button class="button" id="highCard" onclick="highCard()">HIGH CARD</button>
+    </div>
+  </div>
+
+  <h1 style="color:goldenrod;">Remaining Cards:</h1>
+  <div id="cardsRemainingSection">
+
+    <div class="cardsRemainingDisplay" id="cardsRemainingSection__lowCards">
+      <h2>Low Cards:</h2><h2 id="lowCardPercentage">38.46</h2><h2>%</h2>
+    </div>
+
+
+    <div class="cardsRemainingDisplay" id="cardsRemainingSection__middleCards">
+      <h2>Middle Cards:</h2><h2 id="middleCardPercentage">23.07</h2><h2>%</h2>
+    </div>
+
+    <div class="cardsRemainingDisplay" id="cardsRemainingSection__highCards">
+      <h2>High Cards:</h2><h2 id="highCardPercentage">38.46</h2><h2>%</h2>
+    </div>
+
+  </div>
+
+  
+</body>
+</html>
